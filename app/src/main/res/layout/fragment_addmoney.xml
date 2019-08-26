@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_above="@+id/goManualPaymentBtnId"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payfirst"
+
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/muli_bold"
+                android:paddingLeft="15.0dip"
+                android:text="₹ "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="25.0dip" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/amountEditText"
+                    android:layout_width="fill_parent"
+                    android:visibility="visible"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:fontFamily="@font/muli"
+                    android:hint="Amount to Add"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="5.0dip"
+                    android:paddingBottom="20.0dip"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:fontFamily="@font/muli"
+            android:paddingLeft="5.0dip"
+            android:text="Enter minimum Rs 20"
+            android:textColor="#ffff0000"
+            android:textSize="17.0sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25.0dip"
+            android:background="@color/jiosavanblue"
+            android:clickable="true"
+            android:fontFamily="@font/muli_semibold"
+            android:foreground="?android:selectableItemBackground"
+            android:text="ADD"
+            android:visibility="visible"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/goManualPaymentBtnId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20.0dip"
+        android:background="@color/jiosavanblue"
+        android:clickable="true"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:fontFamily="@font/muli_semibold"
+        android:foreground="?android:selectableItemBackground"
+        android:text="Go to Payment Section"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

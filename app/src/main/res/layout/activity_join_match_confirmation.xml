@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/app_bar" />-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/mainRL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/imageLL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageWallet"
+                        android:layout_width="150.0dip"
+                        android:layout_height="150.0dip"
+                        app:srcCompat="@drawable/ic_walletimg"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/balanceLL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageLL"
+                    android:layout_marginTop="25.0dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/availableBalanceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5.0dip"
+                        android:fontFamily="@font/lato"
+                        android:text="Your Current Balance: "
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lato"
+                        android:text="₹ 545"
+                        android:textSize="22.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/entryLL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/balanceLL"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/matcheEntryFeeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:fontFamily="@font/lato"
+                        android:text="Match Entry Fee Per Person: "
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/entryFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5.0dip"
+                        android:fontFamily="@font/lato"
+                        android:text="₹ 25"
+                        android:textSize="22.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/entryLL"
+                    android:layout_marginLeft="7.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginRight="7.0dip"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text="sufficientBalanceText"
+                    android:textColor="#ff1e7e34"
+                    android:textSize="19.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/nextButtonLL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statusTextView"
+                    android:layout_marginLeft="40.0dip"
+                    android:layout_marginTop="35.0dip"
+                    android:layout_marginRight="40.0dip"
+                    android:layout_marginBottom="20.0dip"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/next"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bluebackbutton"
+                            android:clickable="true"
+                            android:fontFamily="@font/lato"
+                            android:foreground="?android:selectableItemBackground"
+                            android:text="Join Now"
+                            android:textAllCaps="true"
+                            android:textColor="#ffffffff"
+                            android:textSize="15.0sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addMoneyLL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statusTextView"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="35.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/cancelButton"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_weight="1.0"
+                        android:background="#ff757575"
+                        android:text="Cancel"
+                        android:textColor="#ffffffff" />
+
+                    <Button
+                        android:id="@+id/addMoneyButton"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@color/darkBlue"
+                        android:text="Add Money"
+                        android:textColor="#ffffffff" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

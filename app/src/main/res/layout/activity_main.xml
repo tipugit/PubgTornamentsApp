@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/createacctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15.0dip"
+        android:fontFamily="@font/muli_extrabold"
+        android:text="Create  New  Account"
+        android:textAllCaps="true"
+        android:textColor="@color/base_dark"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/card_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createacctext"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginRight="24.0dip"
+        android:layout_marginBottom="15.0dip">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50.0dip"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardBackgroundColor="#ffffffff"
+            card_view:cardCornerRadius="4.0dip"
+            card_view:cardElevation="0.0dip"
+            card_view:cardUseCompatPadding="false">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarFadeDuration="0"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35.0dip"
+                    android:orientation="vertical"
+                    android:padding="17.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/firstname"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/muli"
+                                android:hint="First Name"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:paddingLeft="7.0dip"
+                                android:textSize="13sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/lastname"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:fontFamily="@font/muli"
+                                android:hint="Last Name"
+                                android:inputType="textCapWords"
+                                android:maxLength="20"
+                                android:paddingLeft="7.0dip"
+                                android:textSize="13sp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1.0dip">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:hint="Username"
+                            android:inputType="textPersonName"
+                            android:maxLength="20"
+                            android:paddingLeft="7.0dip"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1.0dip">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pubgusername"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:hint="Pubg/FreeFire Username(if both separate by comma)"
+                            android:inputType="textPersonName"
+                            android:maxLength="20"
+                            android:paddingLeft="7.0dip"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1.0dip">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:hint="Email Address"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="30"
+                            android:paddingLeft="7.0dip"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1.0dip">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/mobileNumber"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:hint="Mobile Number"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingLeft="7.0dip"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/etPasswordLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1.0dip"
+                        app:passwordToggleEnabled="true">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:hint="Password"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:maxLength="20"
+                            android:paddingLeft="7.0dip"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1.0dip">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/promocode"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:hint="Promo Code (Optional)"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPersonName"
+                            android:maxLength="20"
+                            android:paddingLeft="7.0dip"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cardRL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/signinbtncard"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:elevation="5.0dip"
+                            card_view:cardCornerRadius="2.0dip"
+                            card_view:cardPreventCornerOverlap="true">
+
+                            <Button
+                                android:id="@+id/registerBtn"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/buttonmain"
+                                android:fontFamily="@font/muli_semibold"
+                                android:minHeight="50px"
+                                android:padding="10dip"
+                                android:text="Register"
+                                android:textAllCaps="false"
+                                android:textColor="#000000"
+                                android:textColorHint="@color/material_cyan_500"
+                                android:visibility="visible" />
+                        </android.support.v7.widget.CardView>
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/signincard"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:elevation="5.0dip"
+                        card_view:cardPreventCornerOverlap="true">
+
+                        <Button
+                            android:id="@+id/loginFromRegister"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttonmain"
+                            android:fontFamily="@font/muli_semibold"
+                            android:minHeight="50px"
+                            android:padding="10dip"
+                            android:text="Sign In"
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/material_cyan_500"
+                            android:visibility="visible" />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.v7.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="3.0dip" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textColor="#FF1100"
+
+        android:text=" Enter your Game User name, not Game user id. Enter your correct user name (if in design and fonts) If your game user name not match you will be kick and no refund"
+
+
+        />
+
+</RelativeLayout>

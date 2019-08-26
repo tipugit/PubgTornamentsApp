@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/signintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55.0dip"
+        android:elevation="25dp"
+        android:fontFamily="@font/muli_extrabold"
+        android:text="Welcome  to "
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/base_dark"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        tools:targetApi="lollipop" />
+    <TextView
+        android:layout_below="@+id/signintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="25dp"
+        android:fontFamily="@font/muli_extrabold"
+        android:text="The Ultimate Tournaments"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/base_dark"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        tools:targetApi="lollipop" />
+
+    <RelativeLayout
+        android:id="@+id/card_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signintext"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginTop="75.0dip"
+        android:layout_marginRight="24.0dip">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50.0dip"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardBackgroundColor="#ffffffff"
+            card_view:cardCornerRadius="5.0dip"
+            card_view:cardElevation="0.0dip"
+            card_view:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="50.0dip"
+                android:orientation="vertical"
+                android:padding="24.0dip">
+
+                <TextView
+                    android:id="@+id/regSuccessMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/regSuccessMessage"
+                    android:textColor="#ff3796bc"
+                    android:textSize="15.0sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:hint="Username"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="7.0dip"
+                        android:textSize="15sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    app:passwordToggleEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/muli"
+                        android:hint="Password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="7.0dip"
+                        android:textSize="15sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardRL">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.0dip">
+
+                        <TextView
+                            android:id="@+id/forgotpass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:text="Forgot Password?" />
+
+                        <TextView
+                            android:id="@+id/resetnow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_toRightOf="@+id/forgotpass"
+                            android:fontFamily="@font/muli"
+                            android:text="Reset Now"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/signinbtncard"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16.0dip"
+                        android:elevation="2.0dip"
+                        card_view:cardCornerRadius="2.0dip"
+                        card_view:cardPreventCornerOverlap="true"
+                        tools:targetApi="lollipop">
+
+                        <Button
+                            android:id="@+id/signinbtn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttonmain"
+                            android:fontFamily="@font/muli_semibold"
+                            android:minHeight="50px"
+                            android:padding="10dip"
+                            android:text="Sign In"
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/material_cyan_500"
+                            android:visibility="visible" />
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:elevation="5.0dip"
+                    card_view:cardPreventCornerOverlap="true"
+                    tools:targetApi="lollipop">
+
+                    <Button
+                        android:id="@+id/registerFromLogin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonmain"
+                        android:fontFamily="@font/muli_semibold"
+                        android:minHeight="50px"
+                        android:padding="10dip"
+                        android:text="Sign Up"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/material_cyan_500"
+                        android:visibility="visible" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilev"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="3.0dip" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

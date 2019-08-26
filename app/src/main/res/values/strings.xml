@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TUT</string>
+
+    <string name="regSuccessMessage">Registered Successfully! Login Now.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="sufficientBalanceText">You have sufficient balance</string>
+    <string name="insufficientBalanceText">You have insufficient balance</string>
+    <string name="upcomingIDPassText">Room ID and Password will be shown here (check before 15min of match schedule time)</string>
+    <string name="shareSub">share</string>
+    <string name="winnerchickendinner">Chicken Dinner Winner</string>
+    <string name="forceUpdateNote">Update app to Latest Version</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="paymentText">When your payment is completed please specify your number and money below.</string>
+    <string name="arart">❝ Do not fill out the form without sending the money. This will affect your account ❞</string>
+
+    <string name="payfirst">To add money to your account, you must first pay to us. Money will be added to your profile shortly after sending money.</string>
+
+</resources>

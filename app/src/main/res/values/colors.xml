@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff23283a</color>
+    <color name="colorPrimaryDark">#ff23283a</color>
+    <color name="colorAccent">#fffdc210</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="jiosavanblue">#2bc5b4</color>
+    <color name="jiosavanbluelight">#bfede8</color>
+    <color name="mainblue">#2f4254</color>
+    <color name="Red">#C40000</color>
+    <color name="bottomnavgrey">#a6a6a6</color>
+    <color name="base_dark">#ff717d8b</color>
+    <color name="blueRandom">#2bc5b4</color>
+    <color name="darkBlue">#ff23283a</color>
+    <color name="design_default_color_primary">#ff3f51b5</color>
+    <color name="design_default_color_primary_dark">#ff303f9f</color>
+    <color name="successGreen">#ff1e7e34</color>
+
+</resources>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/activityseperator"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:background="@color/mainblue"
+            android:visibility="gone"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/referralLL"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkBlue"
+                android:orientation="vertical"
+                android:paddingBottom="20.0dip">
+
+                <ImageView
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/group"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15.0dip"
+                    android:fontFamily="@font/muli_bold"
+                    android:gravity="center"
+                    android:text="Refer More to Earn More!"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#ffecab31"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/refMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:fontFamily="@font/muli"
+                    android:gravity="center"
+                    android:text="Invite your friends and Earn Huge Cash. Your friend Get Rs.5 sign up bonus and you get Rs.10 invite bonus when they join first match."
+                    android:textColor="#ffffffff"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15.0dip"
+                    android:text="Your Promo Code"
+                    android:textAllCaps="true"
+                    android:textColor="#ff302f2f"
+                    android:textSize="15.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/referCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@drawable/dotted_border"
+                    android:fontFamily="@font/muli_semibold"
+                    android:padding="15.0dip"
+                    android:text="playerzon"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ff000000"
+                    android:textIsSelectable="true"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/howrefer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:focusable="true"
+                    android:src="@drawable/refern_n_earn"
+                    android:contentDescription="TODO" />
+
+                <Button
+                    android:id="@+id/referButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="@drawable/buttonback"
+                    android:backgroundTint="@color/darkBlue"
+                    android:fontFamily="@font/muli_semibold"
+                    android:text="Refer Now"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#ffffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

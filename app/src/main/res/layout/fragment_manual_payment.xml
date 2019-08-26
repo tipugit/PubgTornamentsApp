@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_margin="5dp"
+        android:layout_above="@+id/downLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Please Pay First"
+            android:textColor="@color/Red"
+            android:textAlignment="center"
+
+            />
+
+
+
+        <TextView
+
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/paymentText"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+
+            />
+
+
+        <TextView
+
+
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/arart"
+            android:textColor="@color/Red"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Paytm Number"
+            android:textColor="@color/darkBlue"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="9711843537"
+            android:textColor="@color/blueRandom"
+            android:textAlignment="center"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/downLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30.0dip"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="Send to Paytm Wallet"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/mainblue" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/muli_bold"
+                android:text="+91"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="18.0dip" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/numberWithdraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:fontFamily="@font/muli"
+                    android:hint="Paytm Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="5.0dip"
+                    android:paddingBottom="20.0dip"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/muli_bold"
+                android:paddingLeft="15.0dip"
+                android:text="₹ "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textSize="25.0dip" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/amountWithdraw"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:fontFamily="@font/muli"
+                    android:hint="Amount of Money"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="5.0dip"
+                    android:paddingBottom="20.0dip"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/errorMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:fontFamily="@font/muli"
+            android:paddingLeft="5.0dip"
+            android:text="Enter minimum Rs 50"
+            android:textColor="#ffff0000"
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/withdrawButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20.0dip"
+            android:background="@color/jiosavanblue"
+            android:clickable="true"
+            android:textAllCaps="false"
+            android:fontFamily="@font/muli_semibold"
+            android:foreground="?android:selectableItemBackground"
+            android:text="Send Notification"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>

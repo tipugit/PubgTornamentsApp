@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RulesActivity">
+
+   <ImageView
+       android:backgroundTint="@color/blueRandom"
+       android:background="#85696969"
+       android:padding="2dp"
+       android:layout_margin="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:srcCompat="@drawable/back"
+
+
+       />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/blueRandom"
+        android:text="About this Match"
+
+        />
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_marginTop="5sp"
+            android:onClick="back"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:singleLine="false"
+
+            android:text="
+Enter your Game User name, not Game user id. Enter your correct user name (if in design and fonts) If your game user name not match you will be kick and no refund will provide in that case \n\n
+M79 Launcher is not allowed\n\n
+• If in any way you fail to join the room by the match start time then we aren't responsible for it. Refund in such cases won't be processed. So make sure to join on time. \n\n
+• Do not share the Room ID and Password with anyone who has not joined the match. If you are found doing so, your account may get terminated and all the winnings will be lost. \n\n
+• Griefing and Teaming are against the game rules. Any participant found doing so will be disqualified and their prizes will be lost. \n\n
+• Room ID and Password will be shared in the app before 15 minutes of the match start time. \n\n
+• Match will start after 15 minutes of Sharing Room ID and Password. \n\n
+• Make sure to grab ID and Password before the Match Start Time. \n\n
+• Make sure you join the Match Room ASAP before the match starts. \n\n
+❝ Just open the app 15 min before and try to refresh and you will get room id and password in the same tournament section you Joined. ❞ \n\n
+• This match is a Paid match. To participate, you have to pay the entry fee amount. There are limited spots available. Join it before all the spots are filled. \n\n
+• Please note that the listed entry fee is per individual and not the squad/duo team. \n\n
+•  Each member of a team (Squad or Duo) has to pay the entry fee for the match or tournament. \n\n
+• Once you join the match custom room, do not keep changing your position. If you do so, you may get kicked from the room. \n\n
+•  Also. if you want to arrange Giveaway or Sponsor any such match then drop us a mail at \n \n \n contact@theultimate-tournaments.co.in\n\n\n
+• Spots are given on the First Come First Basis. \n\n
+• Last standing man gets the Chicken Dinner Award. \n\n
+• You will be also rewarded for each kill. \n\n
+"
+
+
+            />
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

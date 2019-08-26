@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/black_ops_one</item>
+        <item>@font/lato</item>
+        <item>@font/lato_black</item>
+        <item>@font/lora</item>
+        <item>@font/montserrat</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/muli</item>
+        <item>@font/muli_black</item>
+        <item>@font/muli_bold</item>
+        <item>@font/muli_extrabold</item>
+        <item>@font/muli_semibold</item>
+    </array>
+</resources>

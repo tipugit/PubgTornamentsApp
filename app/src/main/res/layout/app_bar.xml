@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/darkBlue"
+    android:gravity="center_vertical"
+    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="enterAlways|scroll"
+    app:theme="@style/MyToolbarTheme"
+    app:title="The Ultimate Tournaments" />

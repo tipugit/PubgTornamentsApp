@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mainCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="2.0dip"
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        app:cardCornerRadius="5.0dip"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mainTopBanner"
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip"
+                android:background="@drawable/wp"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:contentDescription="TODO" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/privateTextArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/lock"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/lock"
+                        android:visibility="visible"
+                        android:contentDescription="TODO" />
+
+                    <TextView
+                        android:id="@+id/privateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_toRightOf="@+id/lock"
+                        android:fontFamily="@font/lato"
+                        android:text="Private Match"
+                        android:textSize="10.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sponsorTextArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/sponsorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/info"
+                        android:fontFamily="@font/lato"
+                        android:text="Sponsored by TrickyTime"
+                        android:textSize="10.0sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/info"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2.0dip"
+                        app:srcCompat="@drawable/ic_info_black_24dp"
+                        android:visibility="visible"
+                        android:contentDescription="TODO" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15.0dip"
+                android:paddingTop="15.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingBottom="15.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="60.0dip"
+                        android:layout_height="60.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:src="@drawable/circlesmall"
+                        android:contentDescription="TODO" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli_extrabold"
+                            android:text="PUBG Mobile Match #1"
+                            android:textColor="@color/mainblue"
+                            android:textSize="17.0sp" />
+
+                        <TextView
+                            android:id="@+id/timedate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:fontFamily="@font/muli"
+                            android:text="Solo - FPP - Erangel"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:gravity="center"
+                            android:text="WIN PRIZE"
+                            android:textColor="#ff7c7c7c"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/winPrize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="center"
+                            android:text="₹ 500"
+                            android:textColor="@color/darkBlue"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:gravity="center"
+                            android:text="PER KILL"
+                            android:textColor="#ff7c7c7c"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/perKill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="center"
+                            android:text="₹ 10"
+                            android:textColor="@color/darkBlue"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:gravity="center"
+                            android:text="ENTRY FEE"
+                            android:textColor="#ff7c7c7c"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/entryFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="center"
+                            android:text="₹ 50"
+                            android:textColor="@color/darkBlue"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:gravity="center"
+                            android:text="TYPE"
+                            android:textColor="#ff7c7c7c"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/matchType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="center"
+                            android:text="Solo"
+                            android:textColor="@color/darkBlue"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:gravity="center"
+                            android:text="Game"
+                            android:textColor="#ff7c7c7c"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/matchVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="center"
+                            android:text="FPP"
+                            android:textColor="@color/darkBlue"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli"
+                            android:gravity="center"
+                            android:text="MAP"
+                            android:textColor="#ff7c7c7c"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/matchMap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="center"
+                            android:text="Erangel"
+                            android:textColor="#ff000000"
+                            android:textSize="13.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="horizontal"
+                    android:weightSum="3.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                            android:id="@+id/progressBar"
+                            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            app:mpb_progressTint="@color/jiosavanblue"
+                            app:mpb_secondaryProgressTint="@color/jiosavanbluelight"
+                            app:mpb_progressBackgroundTint="@color/jiosavanbluelight"
+                            app:mpb_progressStyle="horizontal" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/spots"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:fontFamily="@font/muli"
+                                android:text="Only 45 spots left"
+                                android:textSize="10.0sp" />
+
+                            <TextView
+                                android:id="@+id/size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/muli"
+                                android:text="55/100"
+                                android:textSize="10.0sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/joinButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30.0dip"
+                            android:layout_gravity="center"
+                            android:background="@drawable/buttonback"
+                            android:clickable="true"
+                            android:fontFamily="@font/muli_semibold"
+                            android:foreground="?android:selectableItemBackground"
+                            android:text="JOIN"
+                            android:textColor="@color/jiosavanblue"
+                            android:textSize="12.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

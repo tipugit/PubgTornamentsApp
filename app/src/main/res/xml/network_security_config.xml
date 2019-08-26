@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Must be included for proper work of the cache. -->
+    <!--<domain-config cleartextTrafficPermitted="true">-->
+        <!--<domain includeSubdomains="true">127.0.0.1</domain>-->
+    <!--</domain-config>-->
+    <base-config cleartextTrafficPermitted="true"/>
+        <!--&lt;!&ndash;<trust-anchors>&ndash;&gt;-->
+            <!--&lt;!&ndash;<certificates src="system" />&ndash;&gt;-->
+        <!--&lt;!&ndash;</trust-anchors>&ndash;&gt;-->
+    <!--</base-config>-->
+</network-security-config>

@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">#ffffffff</item>
+        <item name="titleTextColor">#ffffffff</item>
+    </style>
+
+    <style name="Theme.Toolbar.Custom" parent="@style/AppTheme">
+        <item name="android:textColorSecondary">@color/mainblue</item>
+        <item name="android:actionMenuTextColor">@color/mainblue</item>
+        <item name="actionMenuTextColor">@color/mainblue</item>
+        <item name="colorControlNormal">@color/mainblue</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">11sp</item><!-- text size in menu-->
+
+        <!-- item size in menu-->
+        <item name="android:listPreferredItemHeightSmall">400dp</item>
+        <item name="listPreferredItemHeightSmall">400dp</item>
+
+        <!-- item padding left in menu-->
+        <item name="android:listPreferredItemPaddingLeft">8dp</item>
+        <item name="listPreferredItemPaddingLeft">8dp</item>
+
+        <!-- item padding right in menu-->
+        <item name="android:listPreferredItemPaddingRight">8dp</item>
+        <item name="listPreferredItemPaddingRight">8dp</item>
+    </style>
+
+</resources>

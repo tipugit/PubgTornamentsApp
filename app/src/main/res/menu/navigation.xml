@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_earn"
+        android:icon="@drawable/ic_rupee"
+        android:title="Earn" />
+
+    <item
+        android:id="@+id/navigation_ongoing"
+        android:icon="@drawable/ic_stopwatch1"
+        android:title="Ongoing" />
+
+    <item
+        android:id="@+id/navigation_play"
+        android:icon="@drawable/ic_console"
+        android:title="Play" />
+
+    <item
+        android:id="@+id/navigation_result"
+        android:icon="@drawable/ic_results"
+        android:title="Result" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_icons8_user_male1"
+        android:title="Profile" />
+
+</menu>
